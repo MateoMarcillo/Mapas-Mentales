@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float A, P, r, pi;
+    cout<<"El valor del radio"<<endl;
+    cin>> r;
+    pi=3.1416;  
+    P=2*pi*r;
+    A=pi*r*r;
+    cout<<"El valor del perimetro es "<<P <<endl;
+    cout<<"El valor del area es "<< A <<endl;
+
+    cout << "Hello world!" << endl;
+    return 0;
+}
