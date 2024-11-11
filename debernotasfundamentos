@@ -5,16 +5,16 @@ using namespace std;
 int main()
 
 {
-    int suma, P1,P2,P3;
-    cout<<"ingrese el valor del parcial 1"<<endl;
+    float   promedio, P1,P2,P3;
+    cout<<"ingrese el valor del parcial 1 (sobre 20 puntos)"<<endl;
     cin >> P1;
-    cout <<"ingrese el valor del parcial 2"<<endl;
+    cout <<"ingrese el valor del parcial 2 (sobre 20 puntos)"<<endl;
     cin >> P2;
-    cout <<"ingrese el valor del parcial 3"<<endl;
+    cout <<"ingrese el valor del parcial 3 (sobre 20 puntos)"<<endl;
     cin >> P3;
-    suma = P1, P2, P3;
-    cout<<"Tu promedio total es: "<<suma<<endl;
-    if (suma >= 14.01)
+     promedio = (P1*0.35)+(P2*0.35)+ (P3*0.35);
+    cout<<" promedio total es: "<< promedio<<endl;
+    if ( promedio >= 14.01)
     {
         cout<<"Felicidades pasaste"<<endl;
     }
@@ -26,3 +26,4 @@ int main()
     cout << "Mateo Marcillo!" << endl;
     return 0;
 }
+
