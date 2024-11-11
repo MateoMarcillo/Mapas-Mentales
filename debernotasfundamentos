@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+    int suma, P1,P2,P3;
+    cout<<"ingrese el valor del parcial 1"<<endl;
+    cin >> P1;
+    cout <<"ingrese el valor del parcial 2"<<endl;
+    cin >> P2;
+    cout <<"ingrese el valor del parcial 3"<<endl;
+    cin >> P3;
+    suma = P1, P2, P3;
+    cout<<"Tu promedio total es: "<<suma<<endl;
+    if (suma >= 14.01)
+    {
+        cout<<"Felicidades pasaste"<<endl;
+    }
+    else
+    {
+        cout<<"Mala suerte, tienes que repetir la materia"<<endl;
+
+    }
+    cout << "Mateo Marcillo!" << endl;
+    return 0;
+}
