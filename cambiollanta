@@ -4,16 +4,16 @@ using namespace std;
 int main() {
   
     cout << "Pasos para cambiar una llanta:" << endl;
-    cout << "1. Deten el vehiculo en un lugar seguro y plano." << endl;
-    cout << "2. Coloca el freno de mano y apaga el motor." << endl;
-    cout << "3. Coloca triángulos de seguridad o señales de advertencia." << endl;
-    cout << "4. Afloja un poco los pernos de la llanta con la llave." << endl;
-    cout << "5. Levanta el vehiculo con el gato." << endl;
-    cout << "6. Retira los pernos y quita la llanta dañada." << endl;
-    cout << "7. Coloca la llanta de repuesto y atornilla los pernos." << endl;
-    cout << "8. Baja el vehiculo con el gato." << endl;
-    cout << "9. Ajusta completamente los pernos." << endl;
-    cout << "10. Guarda la herramienta y la llanta dañada." << endl;
+    cout << "1. Para el carrito en un lugar seguro." << endl;
+    cout << "2. Pon el freno de mano." << endl;
+    cout << "3. Coloca señales de seguridad." << endl;
+    cout << "4. Quita los pernos de la llanta con una llave." << endl;
+    cout << "5. Levanta el carrito con la gata." << endl;
+    cout << "6. Quita la llanta dañada." << endl;
+    cout << "7. Pon la nueva llanta y los pernos." << endl;
+    cout << "8. Baja el carrito con la gata." << endl;
+    cout << "9. Ajusta los pernos." << endl;
+    cout << "10. Listo puede volver a rodar." << endl;
 
     return 0;
 }
