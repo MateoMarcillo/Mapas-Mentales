@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+    double I, V, R;
+
+    // Solicitar corriente (I) y voltaje (V)
+    std::cout << "Ingrese la corriente (I) en amperios: ";
+    std::cin >> I;
+    std::cout << "Ingrese el voltaje (V) en voltios: ";
+    std::cin >> V;
+
+    // Calcular resistencia (R) usando la condición P1 = P2
+    if (I != 0) { // Evitar división por cero
+        R = V / I;
+        double P1 = I * I * R;
+        double P2 = V * V / R;
+
+        // Mostrar resultados
+        std::cout << "Resistencia (R) calculada: " << R << " ohmios" << std::endl;
+        std::cout << "Potencia disipada usando P1 = I^2 * R: " << P1 << " vatios" << std::endl;
+        std::cout << "Potencia disipada usando P2 = V^2 / R: " << P2 << " vatios" << std::endl;
+    } else {
+        std::cout << "La corriente no puede ser cero." << std::endl;
+    }
+
+    return 0;
+}
