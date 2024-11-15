@@ -5,23 +5,24 @@ int main()
     float I, V, R;
 
     
-    cout << "Ingrese la corriente (I) en amperios: ";
+    cout << "Ingrese la corriente (I) en amperios: "<<endl;
     cin >> I;
-    cout << "Ingrese el voltaje (V) en voltios: ";
+    cout << "Ingrese el voltaje  voltios: "<<endl;
     cin >> V;
 
     
-    if (I = 0) {
+    if (I = 0) 
+        {
         R = V / I;
         double P1 = I * I * R;
         double P2 = V * V / R;
 
         
-        cout << "Resistencia (R) calculada: " << R << " ohmios" << endl;
-       cout << "Potencia disipada usando P1 = I*I * R: " << P1 << " vatios" << endl;
-       cout << "Potencia disipada usando P2 = V*V / R: " << P2 << " vatios" << endl;
+        cout << "Resistencia (R) calculada: " << R << " omnios" << endl;
+       cout << "Potencia disipada usando P1 = I*I * R: " << P1 << " w" << endl;
+       cout << "Potencia disipada usando P2 = V*V / R: " << P2 << " W" << endl;
     } else {
-        cout << "La corriente no puede ser cero." << std::endl;
+        cout << "La corriente no puede ser cero." <<endl;
     }
 
     return 0;
