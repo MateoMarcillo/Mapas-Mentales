@@ -1,0 +1,36 @@
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float R1, R2, R3, Rt;
+    cout <<"Indicar el valor de la resistencia 1:  "<<endl;
+    cin>> R1;
+    if (R1>0)
+    {
+       cout <<"Indicar el valor de la resistencia 2: "<< endl;
+     cin>> R2;
+     if(R2>0)
+     {
+          cout <<"Indicar el valor de la resistencia 3: "<< endl;
+              cin>> R3;
+              if (R3>0)
+              {
+    Rt= 1/R3+1/R2+1/R1;
+    cout <<"El valor de la resistencia es :"<<Rt<<endl;
+              }
+     }
+    }
+else
+    cout<<"error"<<endl;
+
+
+
+
+
+    cout << "Hello world!" << endl;
+    return 0;
+}
