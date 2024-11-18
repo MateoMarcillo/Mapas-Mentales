@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float Vfuente,Vfoco,Rfoco,I;
+    const int Vf = 12;
+    cout <<"Ingrese el voltaje del foco"<<endl;
+    cin >> Vfoco;
+    cout <<"Ingrese la resistencia del foco"<<endl;
+    cin >> Rfoco;
+    I= Vfuente-Vfoco/Rfoco;
+    if (I=Vfuente-Vfoco/Rfoco <= 0){
+        cout <<"Cortocircuito"<<endl,
+    }
+        else if (I=0.5){
+            cout<<"Considerar cambiar de resistencia"<<endl;
+            else if (I>1){
+                cout<<"Funcionamieto correcto"endl;
+                else
+                    cout"Considerar cambiar de resistencia"<<endl;
+            }
+        }
+    }
+
+    cout << "Hello world!" << endl;
+    return 0;
+}
