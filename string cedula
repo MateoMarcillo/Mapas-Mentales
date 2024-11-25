@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string nombres, apellidos,nacionalidad,fecha_de_nacimiento,lugar_de_nacimiento;
+  apellidos="8 BOLAÑOZ";
+  nombres="CHAVO DEL";
+  nacionalidad="ECUATORIANO";
+  fecha_de_nacimiento="29 AGOST 2009";
+  lugar_de_nacimiento="PICHINCHA QUITO";
+    cout<<"CEDULA DE  "<<"REPUBLICA DEL ECUADOR"<<endl;
+    cout<<"IDENTIDAD  "<<"Direccion general de registro civil identificacion y cedulacion"<<endl;
+    cout<<"APELLIDOS"<<endl;
+    cout<<apellidos<<endl;
+    cout<<"NOMBRES"<<endl;
+    cout<<nombres<<endl;
+    cout<<"NACIONALIDAD"<<endl;
+    cout<<nacionalidad<<endl;
+    cout<<"FECHA DE NACIMIENTO"<<endl;
+    cout<<fecha_de_nacimiento<<endl;
+    cout<<"LUGAR DE NACIMIENTO"<<endl;
+    cout<<lugar_de_nacimiento<<endl;
+
+
+
+
+    cout << "Hello world!" << endl;
+    return 0;
+}
