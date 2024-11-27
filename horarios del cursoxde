@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char dia;
+
+    cout << "Ingrese el día de la semana (L, M, M2, J, V): ";
+    cin >> dia;
+
+    switch (dia) {
+        case 'L':
+            cout << "Materias: Fundamentos de programación, Cálculo, Química" << endl;
+            break;
+        case 'M':
+            cout << "Materias: Biología, Álgebra lineal" << endl;
+            break;
+        case 'M2':
+            cout << "Materias: Fundamentos de programación, Cálculo, Química" << endl;
+            break;
+        case 'J':
+            cout << "Materias: Biología, Álgebra lineal" << endl;
+            break;
+        case 'V':
+            cout << "Materias: Fundamentos de programación, Cálculo, Química" << endl;
+            break;
+        default:
+            cout << "Día no válido." << endl;
+    }
+
+    return 0;
+}
