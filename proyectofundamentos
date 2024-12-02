@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int opcion;
+    float distancia, combustible, consumo;
+
+    do {
+        // mostramos el menu de opciones para escoger
+        cout << "\n--- Calculadora de Consumo de Combustible ---\n";
+        cout << "1. Calcular consumo de combustible\n";
+        cout << "2. Salir\n";
+        cout << "Seleccione una opción: ";
+        cin >> opcion;
+
+        switch (opcion) {
+            case 1:
+                //solicitamos la distancia que se va a recorrer
+                cout << "Ingrese la distancia recorrida (en km): ";
+                cin >> distancia;
+
+                // validamos que la distancia sea mayor que cero
+                if (distancia <= 0) {
+                    cout << "Error: la distancia debe ser mayor que cero." << endl;
+                    break; // Salir del caso sin calcular
+                }
+
+                // solicitamos la cantidad del conbustible que consumimos 
+                cout << "Ingrese la cantidad de combustible consumido (en litros): ";
+                cin >> combustible;
+
+                // verificar que el combustible no sea negativo
+                if (combustible <= 0) {
+                    cout << "Error: la cantidad de combustible no puede ser negativa." << endl;
+                    break; // Salir del caso sin calcular
+                }
+
+                // calculamos el consumo del combustible por cada cien
+                consumo = (combustible / distancia) * 100;
+
+                // imprimimos el resultado
+                cout << "El consumo de combustible es: " << consumo << " litros por cada 100 km." << endl;
+                break;
+
+            case 2:
+                cout << "Saliendo del programa." << endl;
+                break;
+
+            default:
+                cout << "Opción no válida. Por favor, seleccione 1 o 2." << endl;
+                break;
+        }
+    } while (opcion != 2); // Repetir hasta que se elija salir
+
+    return 0;
+}
