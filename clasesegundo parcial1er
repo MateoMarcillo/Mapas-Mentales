@@ -1,0 +1,51 @@
+#include <iostream>
+
+using namespace std;
+float suma(float x,float y);
+float resta(float x, float y);
+float multiplicacion(float x, float y);
+float division(float x, float y);
+int main()
+
+{
+    float resultadosuma;
+    float resultadoresta;
+    float resultadomultiplicacion;
+    float resultadodivision;
+    float x,y;
+    cout <<"-----Ingrese el valor de x----- "<<endl;
+    cin >> x;
+    cout <<"-------Ingrese el valor de y--------"<<endl;
+    cin>>y;
+    resultadosuma=suma(x,y);
+    resultadoresta=resta(x,y);
+    resultadomultiplicacion=multiplicacion(x,y);
+    resultadodivision=division(x,y);
+
+    cout<<"el resultado de la suma es "<<resultadosuma<<endl;
+    cout<<"el resultado de la resta es "<<resultadoresta<<endl;
+    cout<<"el resultado de la multiplicacion es "<<resultadomultiplicacion<<endl;
+    cout<<"el resultado de la division es "<<resultadodivision<<endl;
+
+
+
+    cout << "Hello world!" << endl;
+    return 0;
+}
+float suma (float x,float y){
+float suma= x+y;
+return suma;
+}
+
+float resta(float x,float y){
+float resta=x-y;
+return resta;
+}
+float multiplicacion (float x, float y){
+float multiplicacion=x*y;
+return multiplicacion;
+}
+float division (float x, float y ){
+float division = x/y;
+return division;
+}
