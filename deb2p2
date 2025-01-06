@@ -1,0 +1,68 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+struct Producto {
+    string nombre;
+    double precio;
+    int cantidad;
+};
+
+void mostrarProductos(Producto productos[], int tamano) {
+    cout << "\nProductos disponibles:\n";
+    for (int i = 0; i < tamano; i++) {
+        cout << i + 1 << ". " << productos[i].nombre << " ($" << fixed << setprecision(2) << productos[i].precio << ") - Cantidad: " << productos[i].cantidad << "\n";
+    }
+}
+
+int main() {
+
+    Producto productos[] = {
+        {"Chocolate", 1.00, 5},
+        {"Agua", 0.50, 5},
+        {"Cicle", 0.25, 5},
+        {"Doritos", 1.50, 5},
+        {"Sanduche", 2.00, 5}
+    };
+    const int numProductos = 5;
+
+    double presupuesto = 5.00;
+    int opcion;
+
+    cout << "Bienvenido mateo marcilllo";
+    cout << "Tienes $" << fixed << setprecision(2) << presupuesto << " de presupuesto.\n";
+
+    while (presupuesto > 0) {
+        mostrarProductos(productos, numProductos);
+        cout << "\nElige un producto (1-" << numProductos << ") o 0 para salir: ";
+        cin >> opcion;
+
+        if (opcion == 0) {
+            cout << "Gracias por comprar tu cambio es $" << presupuesto << "\n";
+            break;
+        }
+
+        if (opcion < 1 || opcion > numProductos) {
+            cout << "Opcion invalida.\n";
+            continue;
+        }
+
+        Producto &productoSeleccionado = productos[opcion - 1];
+
+        if (productoSeleccionado.cantidad <= 0) {
+            cout << "Lo siento, el producto " << productoSeleccionado.nombre << " esta agotado.\n";
+        } else if (productoSeleccionado.precio > presupuesto) {
+            cout << "No tienes suficiente presupuesto para comprar " << productoSeleccionado.nombre << ".\n";
+        } else {
+            productoSeleccionado.cantidad--;
+            presupuesto -= productoSeleccionado.precio;
+            cout << "Has comprado " << productoSeleccionado.nombre << ". Te queda $" << presupuesto << " de presupuesto.\n";
+        }
+    }
+
+    if (presupuesto == 0) {
+        cout << "no tienes plata!\n";
+    }
+
+    return 0;
+}
