@@ -8,7 +8,7 @@ struct Producto {
     int cantidad;
 };
 
-void mostrarProductos(Producto productos[], int tamano) {
+void mostrarmateo(Producto productos[], int tamano) {
     cout << "\nProductos disponibles:\n";
     for (int i = 0; i < tamano; i++) {
         cout << i + 1 << ". " << productos[i].nombre << " ($" << fixed << setprecision(2) << productos[i].precio << ") - Cantidad: " << productos[i].cantidad << "\n";
@@ -29,11 +29,11 @@ int main() {
     double presupuesto = 5.00;
     int opcion;
 
-    cout << "Bienvenido mateo marcilllo";
+    cout << "Bienvenido Mateo marcilllo";
     cout << "Tienes $" << fixed << setprecision(2) << presupuesto << " de presupuesto.\n";
 
     while (presupuesto > 0) {
-        mostrarProductos(productos, numProductos);
+        mostrarmateo(productos, numProductos);
         cout << "\nElige un producto (1-" << numProductos << ") o 0 para salir: ";
         cin >> opcion;
 
